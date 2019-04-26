@@ -1,0 +1,14 @@
+<div class="modal-header">
+    <div class="col-md-12">
+        <h1>Enter your Deposit Address from BTCMarkets</h1>
+    </div>    
+</div> 
+<div class="modal-body">
+    <input class="form-control" ng-model="btcAddressInp">
+</div>  
+<div class="modal-footer">
+    <div class="col-md-12 textAlignCenter">
+        <button class="btn btn-success" ng-click="btc.confirmTradeBtcMarket(btcAddressInp)">Confirm</button>
+        <button class="btn btn-danger" ng-click="btc.cancel()">Cancel</button>
+    </div>
+</div>

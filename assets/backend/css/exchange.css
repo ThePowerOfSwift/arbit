@@ -1,0 +1,411 @@
+#auto_buy{
+    padding: 6px 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+/* The container */
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    margin-left: -20px;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+    background-color: #343a40; 
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark:after {
+    left: 10px;
+    top: 2px;
+    width: 9px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.autobuyWrap {
+    position: relative;
+    /* z-index: 1; */
+}
+.autobuyWrap:hover {
+
+}
+.autobuyCheckbox{min-width: 130px;}
+.autobuyCheckbox span, .autoBuyDropDown label{
+    font-weight: 700;
+}
+
+.autoBuyDropDown {
+    position: absolute;
+    display: none;
+    background: #ffd147;
+    /* z-index: 0; */
+    bottom: 100%;
+    transition: 0.6s ease all;
+    right: 50%;
+    z-index: 1;
+    padding: 41px 20px;
+    visibility: hidden;
+    margin-right: -150px;
+}
+#auto_buy:hover ~ .autoBuyDropDown, .autoBuyDropDown:hover {
+    display: block;
+    bottom: -550%;
+    visibility: visible;
+    transition: 0.6s ease all;
+    z-index: 10;
+    box-shadow: 0px 5px 10px #343940;
+}
+.autoBuyDropDown > div:first-of-type > div:nth-of-type(2){
+    margin: 0 20px;
+}
+.autoBuyDropDown > div{
+    display: flex;
+}
+/*****/
+.custom-select {
+  padding: 0px;
+  position: relative;
+  width: 200px;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: #343a40;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #343a40;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: #62666b;
+}
+
+.btn.btnASAVE{
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-weight: 700;
+}
+.btn.btnASAVE:hover{background: #fff;}
+/*****************/
+.usersChatWrap{
+    position: fixed;
+    /*display: inline-block;*/
+    display: inline-table;
+    width: 450px;
+    /*background: #daa521;*/
+    bottom: -515px;
+    right: 20px;
+    height: 400px;
+    z-index: 10;
+    transition: 0.3s ease all;
+}
+.userChatDiv{
+    position: relative;
+    /*padding: 10px 15px;*/
+    /*padding: 10px 10px 0 10px;*/
+    padding: 10px 0 0 0;
+    height: 470px;
+    /*overflow-y: scroll;*/
+    color: #fff;
+    background: #343a40;
+    box-shadow: 0px 10px 20px #000;
+}
+.panel.panel-primary::-webkit-scrollbar {
+    width: 5px;
+}
+.panel.panel-primary::-webkit-scrollbar-track {
+    background: #484848; 
+}
+.panel.panel-primary::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+.panel.panel-primary::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+/*.inputChat{ display: flex;}*/
+.inputChat input{ width: 85%;border-radius: 10px 0 0 10px;}
+.inputChat button{width: 15%;border-radius: 0 10px 10px 0;background: #daa521; color: #fff;}
+.liveChat{
+    background: #daa521;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: flex;
+    font-weight: 700;
+    color: #343a40;
+    justify-content: space-between;
+    border-radius: 10px 0 0 0;
+}
+#showChat{
+    background: #000;
+    padding: 2px 5px;
+    color: #daa521;
+    padding: 10px 80px;
+    margin-bottom: 0;
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+}
+.visibleChat{bottom: 0;}
+#showChat,#hideChat{cursor: pointer; transition: 0.3s ease all;}
+#showChat:hover,#hideChat:hover{color: #fff; }
+#hideChat:hover {
+    background: #171f27;
+    padding: 0px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.hiddenDiv{visibility: hidden;opacity: 0;}
+.userMsgWrap{/*margin-bottom: 10px;   */ border-bottom: 1px solid #daa52126;    padding-bottom: 10px;}
+.chatUserName{
+    color: #daa521;
+    font-weight: 700;
+    font-size: 18px;
+}
+.chatUserText{
+    font-size: 14px;
+    margin-bottom: 0;
+    /*word-break: break-all;*/
+    word-break: break-word;
+}
+.chatUserMeta{
+    font-size: 10px;
+    text-indent: 15px;
+    color: #ffffffa1;
+}
+/*.userMsgWrap:nth-of-type(2n+1) .chatUserName{color: #d1ecf1;}*/
+
+.panel.panel-primary{
+    position:relative;
+    height: 400px;
+    overflow-y: scroll;
+}
+.inputChat{
+    display: flex;
+    /*position: absolute;*/
+    /*content: '';*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    background: #343a40;
+    padding: 5px;
+    max-width: 100%;
+    margin: 0;
+}
+.userMsgWrap{ position: relative;padding: 5px 15px 5px 5px;}
+.userMsgWrap:nth-of-type(2n-1) {
+    background: #171f27;
+}
+.chatBtnHideShow{
+    position: absolute;
+    display:none;
+    content: '';
+    right: 5px;
+    padding: 0px;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    background: transparent;
+    color: #ff4444;
+    cursor: pointer;
+}
+.chatBtnHideShow:hover{background: #daa521;color: #fff;}
+
+.deleteChat{
+    background: #343a40;
+    border: none;
+    font-weight: 600;
+    border-radius: 8em;
+    color: #fff;
+    display: none;
+    padding: 0px 10px;
+    transition: 0.3s ease all;
+}
+.deleteChat:hover{text-decoration: underline;}
+
+.noteLossModelParagraph
+{
+    display:none;
+    padding: 5px 16px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: inherit;
+    margin-bottom: 0;
+}
+
+#noteLossModel
+{
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+/*************************************/
+.exDivHeading{
+    background-color: #343a40!important;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid transparent;
+    /* border: 1px solid darkgrey; */
+    background: #343a40;
+    background: -moz-linear-gradient(top, #343a40 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(top, #343a40 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom, #343a40 0%,#6d6a6a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a40', endColorstr='#e5e5e5',GradientType=0 );
+}
+.exDivBody{
+    padding: 20px 12px;
+    background: #fbfbfb;
+    border: 1px solid #d2d1d1;
+    border-radius: 0 0 10px 10px;
+    min-height: 160px;
+}
+.input-group.form-control{
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+}
+
+.tableDivExchange{
+    background: #fbfbfb;
+    border: 1px solid #d2d1d1;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+/* width */
+.tableDivExchange::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/* Track */
+.tableDivExchange::-webkit-scrollbar-track {
+    background: #daa521; 
+}
+ 
+/* Handle */
+.tableDivExchange::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+
+/* Handle on hover */
+.tableDivExchange::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}
+.rowDataExchange {
+    margin: 50px 0px 20px 0;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    /*background-color: rgb(255, 244, 218);*/
+    background-color: rgba(249, 211, 121, 0.52);
+}
+
+@media screen and (max-width: 1199px){
+    .autoBuyDropDown{right: 100%;}
+}
+@media screen and (max-width: 767px){
+    .autoBuyDropDown{right: auto;left: 0;margin-right: 0;}
+    .usersChatWrap{width: 100%;left: 0;right: 0;}
+}
+@media screen and (max-width: 680px){
+    #auto_buy:hover ~ .autoBuyDropDown, .autoBuyDropDown:hover{
+        bottom: -440%;
+        padding: 20px 20px;
+    }
+    .custom-select{width: 110px;}
+}
+@media screen and (max-width: 580px){
+    .autobuyCheckbox{min-height: 40px;}
+    .checkmark{top: 0;height: 25px;width: 25px;}
+    .container1{display: inline-block;float: left;}
+    .container1 .checkmark:after{width: 8px;height: 17px;}
+    .autoBuyDropDown > div:first-of-type > div:nth-of-type(2){margin: 0;}
+    .autoBuyDropDown > div:first-of-type > div:nth-of-type(2),
+    .autoBuyDropDown > div:first-of-type > div:nth-of-type(3){
+        min-height: 90px;
+    }
+    .custom-select {width: 110%;}
+    .autoBuyDropDown > div {display: block;}
+    #auto_buy:hover ~ .autoBuyDropDown, .autoBuyDropDown:hover{bottom: -835%;}
+}

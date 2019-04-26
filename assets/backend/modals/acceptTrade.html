@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <div class="col-md-12 text-center">
+        <h3>Your Arbitraging Trade For <span class="text-danger">{{pc.data.curr}}</span></h3>
+    </div>    
+</div> 
+<div class="modal-body">
+    <h5>Main Currency : <span class="text-danger">{{pc.data.mainCurr}}</span> </h5>
+    <h5>Buy From : <span class="text-danger">{{pc.data.buyExchange}}</span> </h5>
+    <h5>Buying Value : <span class="text-danger">{{pc.data.buyFrom}}</span> </h5>
+    <h5>Sell To : <span class="text-danger">{{pc.data.sellExchange}}</span> </h5>
+    <h5>Selling Value : <span class="text-danger">{{pc.data.sellTo}}</span> </h5>
+</div>  
+<div class="modal-footer">
+    <div class="col-md-12 textAlignCenter">
+        <button class="btn btn-success" ng-click="pc.confirmTrade()">Confirm</button>
+        <button class="btn btn-danger" ng-click="pc.cancel()">Cancel</button>
+    </div>
+</div>

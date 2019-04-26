@@ -1,0 +1,502 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.pointerCur
+{
+    cursor:pointer;
+}
+.tableHeader
+{
+    padding: 10px 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #343a40!important;
+    text-align: center;
+    font-weight:700;
+    border-radius: 10px 10px 0px 0px
+}
+.tableColumn
+{
+    padding: 10px 20px;
+}
+.limitSetters
+{
+    background-color: #343a40!important;
+    padding: 50px 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: white;
+}
+.limitSetters > h3{
+    font-family: sans-serif;
+}
+.overflowX
+{
+    overflow-x: auto;
+}
+.table>tbody
+{
+    /*text-align: center !important;*/
+    text-align: -webkit-center;
+}
+table>tbody>tr>td {
+    padding: 8px 10px !important;
+    font-size: 14px;
+    position: relative;
+}
+.table>thead>tr>th
+{
+    text-align: center;
+}
+.table>tbody>tr>th
+{
+    text-align: center;
+}
+.border01
+{
+    border: 1px solid lightgrey;
+}
+.innerTd_table
+{
+    margin-top: 14px;
+    text-align: left;
+    cursor: pointer;
+} 
+.innerTd_table tr
+{
+    border-bottom:none !important;
+} 
+.innerTd_table tr td
+{
+    /*padding: 5px;*/
+    /*text-align: center;*/
+    /*border-bottom: 1px solid;*/
+    /*text-align: -webkit-center;*/
+    min-width: 120px;
+    max-width: 120px;
+}
+.tablle_borderRight
+{
+    /*border-right: 1px solid;*/
+}
+.innerTd_table tr:nth-of-type(1) td
+{
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid;
+    height: 45px;
+    text-align: center;
+}
+.innerTd_table tr:nth-of-type(2) td
+{
+    color: #ddbc95;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.innerTd_table tr:nth-of-type(2) td:nth-of-type(2)
+{
+    font-size: 13px;
+    font-weight: bolder;
+    color: #b38867;
+}
+/*.innerTd_table tr:nth-of-type(1) td*/
+/*{*/
+/*    padding:6px 15px;*/
+/*    border: 1px solid black;*/
+/*}*/
+/*.innerTd_table tr:nth-of-type(2) td*/
+/*{*/
+/*    background-color: #ddbc95;*/
+/*    font-size: 10px;*/
+/*    color: #000;*/
+/*    padding: 6px 10px;*/
+/*    border: 1px solid;*/
+/*}*/
+/*.innerTd_table tr:nth-of-type(2) td:nth-of-type(2)*/
+/*{*/
+/*    background-color: #b38867;*/
+/*    font-size: 10px;*/
+/*    color: #000;*/
+/*    padding: 6px 10px;*/
+/*    border: 1px solid;*/
+/*}*/
+.sliderInput
+{
+    color: #000;
+    width: 40%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.exchangeLogo
+{
+    width: 30px;
+    margin:12px 0;
+}
+.exchangeLogoHeader
+{
+    width: 22px;
+    height: 22px;
+    cursor:pointer;
+}
+.modalDivTd
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+}
+#btc_dollar
+{
+    font-size: 18px;
+}
+.tab {
+    overflow: hidden;
+    margin-top:10px;
+}
+.tabsRow
+{
+    margin: 0px;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight:bolder;
+    background-color: goldenrod;
+    border-left:1px solid black;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+.negativeValue
+{
+    color:red;
+}
+.positiveValue
+{
+    color:black;
+}
+#currTradeStatusDiv
+{
+    display:none;
+}
+#currTransferStatusDiv
+{
+    display:none;
+}
+#mbotTablesContentDiv
+{
+    display:none;
+}
+#transferBtnCoin
+{
+    display:none;
+}
+#tradeTable tr td
+{
+    padding:0px important;
+}
+.table td
+{
+    border-top:none;
+}
+.table th 
+{
+    padding: 1px important;
+    vertical-align: top;
+}  
+.table tr
+{
+    border-bottom: 1px solid #e9ecef;
+}
+.paddingBtm8
+{
+    padding-bottom: 7px;
+}
+.mBotImageBalance ul
+{
+    display: flex;
+    list-style: none;
+}
+.mBotImageBalance ul li
+{
+    text-align: -webkit-center;
+    padding: 7px 20px;
+    font-weight: 700;
+}
+.mBotImageBalance ul li img
+{
+    width:30px;
+    cursor: pointer;
+}
+.imageBlnceCheckDiv
+{
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: overline;
+    color: #daa522;
+}
+.labelEchaName
+{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: monospace;
+}
+.labelEchaName span
+{
+    font-size: 15px;
+    font-weight: 100;
+    color: red;
+}
+.modal-dialog
+{
+    margin-top:10%;
+}
+.floatRightBtn
+{
+    float: right;
+}
+.transferModalBody
+{
+    padding:20px 50px;
+}
+.transferModalBody .form-group label
+{
+    font-size:18px;
+    font-weight:700;
+}
+.borderLeftNone
+{
+    border-left: none !important;
+}
+#apiResponseTd p
+{
+    word-break: break-word;
+    font-family: monospace;
+}
+.redColor
+{
+    color:red;
+}
+.blackColor
+{
+    color: #000;
+}
+.darkGreenColor
+{
+    color: #0ecc0e;
+}
+.silverColor
+{
+    color: #948f8f;
+}
+.modal-open .modal {
+    opacity: 1;
+    background: #0000008f;
+}
+.currLogoClass
+{
+    width: 30px;
+    height: 35px;
+}
+.borderLeftHeader
+{
+    border-left: 1px solid;
+}
+.hideTable{
+    display:none;
+}
+
+
+.progressBarBg{
+    position: relative;
+    background: #cacaca;
+    border-radius: 8em;
+    overflow: hidden;
+}
+.progressBar_Text{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    left: 50%;
+    margin-left: -70px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    /*padding-top: 2px;*/
+    text-shadow: 1px 1px #000;
+}
+.progressBar{
+    height: 30px;
+    background: #DAA520;
+    border-radius: 8em;
+}
+.mBOT_views
+{
+    color: #daa522;
+    font-size: 14px;
+    font-weight: 700;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 2px #daa520;
+}
+.mBOT_views a
+{
+    color: #daa522;
+}
+.responseThDiv
+{
+    overflow-y: scroll;
+    max-height: 150px;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.switchLabel {
+	cursor: pointer;
+    text-indent: -120px;
+    width: 40px;
+    height: 26px;
+    background: grey;
+    border-radius: 20px;
+    position: relative;
+}
+
+.switchLabel:after {
+	content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + .switchLabel {
+	background: #deaf3d;
+}
+
+input:checked + .switchLabel:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.switchLabel:active:after {
+	width: 130px;
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+    .mBotImageBalance ul li
+    {
+        padding: 7px 15px;
+        font-weight: 700;
+    }
+    .mBotImageBalance ul li img
+    {
+        width:26px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 1180px) {
+    .mBotImageBalance ul li
+    {
+        padding: 2px 8px;
+        font-weight: 700;
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .mBotImageBalance ul li 
+    {
+        padding: 2px 8px;
+        font-size: 13px;
+    }    
+}
+@media only screen and (max-width: 992px) {
+    .mBotImageBalance ul li
+    {
+        padding: 2px 15px;
+        font-size: 15px;
+    }
+    .mBotImageBalance ul li img
+    {
+        width:30px;
+    }  
+}
+@media only screen and (max-width: 890px) {
+    .mBotImageBalance ul li
+    {
+        padding: 2px 12px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 765px) {
+    .mBotImageBalance ul li
+    {
+        padding: 2px 10px;
+        font-size: 12px;
+    }
+    .mBotImageBalance ul li img
+    {
+        width:25px;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .mBotImageBalance ul
+    {
+        display: block;
+    }
+    .mBotImageBalance ul li
+    {
+        float:left;
+        margin-bottom: 10px;
+    }
+    .mBotImageBalance ul li:nth-child(6)
+    {
+        clear:left;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .mBotImageBalance ul li:nth-child(6)
+    {
+        clear:none;
+    }
+    .mBotImageBalance ul li:nth-child(4)
+    {
+        clear:left;
+    }
+}

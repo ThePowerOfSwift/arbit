@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"git.enableSmartCommit": true,
+		"workbench.panel.location": "bottom",
+		"explorer.confirmDelete": false,
+		"explorer.confirmDragAndDrop": false
+	}
+}

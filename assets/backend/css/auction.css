@@ -1,0 +1,400 @@
+/*body{opacity: 0;}*/
+button{
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0);
+    outline: 0 !important;
+}
+
+.userAuctionRow{
+    display:none;
+}
+.auction{margin-left: 10px;margin-bottom: 20px;}
+.auctioReqh3{
+    
+}
+.auctioReqh3 button.btn.btn-lg{
+    /*width: 100%;*/
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    background: #daa521;
+    border: #daa421;
+    box-shadow: 0 0 10px #daa421;
+}
+.ab_wrap{
+    background: rgba(204, 204, 204, 0.4);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.ab_wrap > h3,
+.acc_heading{
+    font-size: 24px;
+    font-family: monospace;
+    color: #fff;
+    /*background: #343940;*/
+    border-radius: 10px 10px 0 0;
+    padding: 5px 15px 8px;
+    margin: 0;
+    
+    background: #343940; /* Old browsers */
+    background: -moz-linear-gradient(top, #343940 40%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #343940 40%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #343940 40%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343940', endColorstr='#000000',GradientType=0 );
+}
+.ab_boxWrap{
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 15px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.col33{
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    /*padding: 0 10px;*/
+}
+.ab_box{
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 10px 20px;
+    /*margin: 0 10px;*/
+}
+.ab_boxInner{
+    text-align: center;
+}
+.ab_boxInner > div:first-of-type{
+    margin: 0 0 10px 0;
+}
+.worthValue{
+    font-size: 30px;
+    font-weight: 700;
+    color: #daa421;
+    /* text-shadow: 1px 1px 0px rgba(52, 56, 64, 0.5); */
+    
+}
+.bidValue{
+    position: relative;
+}
+.bidValue:before{
+    
+    
+}
+.bidDetails{
+    position: relative;
+    padding: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.bidDetails:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 80%;
+    height: 1px;
+    background: rgba(52, 56, 64, 0.5);
+    top: -8px;
+    left: 50%;
+    margin-left: -40%;
+}
+.bD_b.bidDetails:before{
+    top: auto;
+    bottom: 5px;
+}
+.bidDetails > div{
+    width: 50%;
+    text-align: center;
+}
+.bidDetails h6{
+    margin: 0 0 2px 0;
+}
+.bidDetails h6 > span {
+    
+}
+.bidDetails h6 > span:first-of-type {
+    display: block;
+    margin-bottom: 2px;
+}
+.bidDetails h6 > span:last-of-type {
+    font-size: 14px;
+}
+.accDetails h6 > span:last-of-type {
+    float: right;
+}
+.accDetails{
+    margin-bottom: 15px;
+}
+.accDetails h6{
+    font-size: 14px;
+    /* color: #343840; */
+    margin: 0;
+     text-align: left; 
+    padding: 0 15px;
+}
+.accDetails h6 > span{
+    display: inline-block;
+    /*text-decoration: underline;*/
+}
+.accDetails h6 > span:first-of-type{
+    min-width: 150px;
+    font-weight: 700;
+    display: inline-block;
+}
+.accDetails h6 i {
+    color: #daa421;
+    margin-right: 10px;
+}
+.acc_actions{
+    /*display: flex;*/
+    /*flex-flow: wrap;*/
+}
+.acc_actions > span{
+    display: inline-block;
+    position: relative;
+    margin-left: -20%;
+}
+.accDetails > div{
+        /*display: inline-block;*/
+    /* width: 45%; */
+    /*color: #ffffff;*/
+    /*background: rgba(52, 57, 64, 0.5);*/
+    /*margin: 0 10px 10px;*/
+    padding: 4px 0px;
+    border-radius: 8em;
+    /*box-shadow: 0 0 5px #000;*/
+}
+.acc_actions input{
+    background: rgba(204, 204, 204, 0.3);
+    border: none;
+     border: 1px solid #ccc; 
+    padding: 5px 15px;
+    min-width: 170px;
+    outline: 0;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8em;
+    /*box-shadow: 0 0 10px #807f7f;*/
+    text-align: left;
+}
+.acc_actions button{
+    min-width: 80px;
+    /*background: #0087ff;*/
+    background: rgb(94, 98, 104);
+    border: 1px solid rgb(94, 98, 104);
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 15px 2px 10px;
+    /* margin-left: 5px; */
+    font-size: 14px;
+    position: absolute;
+    right: -70px;
+    bottom: 0;
+    top: 0;
+    border-radius: 0 8em 8em 0;
+    /* box-shadow: 0 0 10px #ccc; */
+}
+.acc_actions button:hover{background: rgb(218, 165, 33);border: 1px solid rgb(218, 165, 33);padding-bottom: 8px;}
+
+
+.modalHeaderExchange {
+    color: #daa521;
+    background: #161e2d;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+
+/**/
+.loader {
+    display: none;
+    border: 8px solid #daa521;
+    border-top: 8px solid #00000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    background: transparent;
+    margin: 0;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/**/
+/* width */
+.scroll_::-webkit-scrollbar,
+.tableDivExchange::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+/* Track */
+.scroll_::-webkit-scrollbar-track,
+.tableDivExchange::-webkit-scrollbar-track{
+  background: #f1f1f1; 
+}
+/* Handle */
+.scroll_::-webkit-scrollbar-thumb,
+.tableDivExchange::-webkit-scrollbar-thumb{
+  background: #888; 
+}
+/* Handle on hover */
+.scroll_::-webkit-scrollbar-thumb:hover,
+.tableDivExchange::-webkit-scrollbar-thumb:hover{
+  background: #555; 
+}
+
+.tableDivExchange td{
+    padding: 5px 5px;
+}
+/**/
+
+.imgLogoMarg {
+    margin-top: 15px;
+}
+.exDivHeading {
+    background-color: #343a40!important;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid transparent;
+    background: #343a40;
+    background: -moz-linear-gradient(top,#343a40 0%,#e5e5e5 100%);
+    background: -webkit-linear-gradient(top,#343a40 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom,#343a40 0%,#6d6a6a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343a40',endColorstr='#e5e5e5',GradientType=0 );
+}
+.tableDivExchange {
+    background: #fbfbfb;
+    border: 1px solid #d2d1d1;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(136,136,136,.8);
+}
+#bidTable {
+    transition-duration: .2s;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(249,211,121,.52);
+}
+
+
+
+#PageBtnDiv {
+    display:none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#PageBtnDiv .myPagination{
+    border: 1px solid #5e6268;
+    font-weight: 700;
+    transition: 0.3s ease all;
+    margin: 0 2px;
+    padding: 5px 15px;
+}
+#PageBtnDiv .myPagination:hover{
+    background: #5e6268;
+    color: #ffffff;
+}
+#PageBtnDiv .myPagination.active{
+    background: #5e6268;
+    color: #ffffff;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.dropdownDiv{
+    padding: 10px 25px 0 25px;
+}
+.dropdownDiv .dropdown button{
+    background: #2e343c;
+    color: #fff;
+    padding: 10px 30px;
+}
+.dropdown .dropdown-menu .dropdown-header {
+    font-size:12px;
+}
+.dropdown .dropdown-menu .divider {
+    border-bottom:1px solid lightgray;
+}
+.dropdown .dropdown-menu .dropdown-option {
+    padding-left:1.5rem;
+}
+.dropdown .dropdown-menu .dropdown-option a {
+    color:#000;
+}
+
+@media screen and (max-width: 1199px){
+    .ab_box{padding: 15px 5px;}
+    .acc_actions button{
+        min-width: 60px;
+        right: -50px;
+    }
+    .col33{
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    .auctioReqh3 button.btn.btn-lg{font-size: 14px;}
+    .ab_wrap{padding-bottom: 20px;}
+    .scroll_{
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+    .modalHeaderExchange h4{font-size: 20px;}
+    .modal h6{font-size: 14px;}
+    .modal p{ font-size: 13px;}
+}
+
+@media screen and (max-width: 600px){
+    .ab_box{padding: 15px 10px;}
+    .col33{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

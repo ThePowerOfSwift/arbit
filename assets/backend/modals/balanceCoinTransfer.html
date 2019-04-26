@@ -1,0 +1,14 @@
+<div class="modal-header">
+    <div class="col-md-12">
+        <h1 class="text-danger">Your Balance</h1>
+    </div>    
+</div> 
+<div class="modal-body">
+    <input type="number" class="form-control" ng-model="ctn.balanceApiGet">
+</div> 
+<div class="modal-footer">
+    <div class="col-md-12" style="text-align:right">
+        <button class="btn btn-success" ng-click="ctn.confirmTransferBalance(ctn.balanceApiGet)">Confirm</button>
+        <button class="btn btn-danger" ng-click="ctn.cancel()">Cancel</button>
+    </div>
+</div>

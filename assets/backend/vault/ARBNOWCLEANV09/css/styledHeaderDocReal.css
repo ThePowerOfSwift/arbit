@@ -1,0 +1,265 @@
+/* THIS IS THE REFERENCED STYLE SHEET - FROM THE IMAGEWITHPANEL HTML DOCUMENT*/
+/* THE PARAMETERS GIVEN IN THE "BODY" FUNCTION - DEFINE THE RULES FOR THE ENTIRE DOCUMENT*/
+/* THESE PARAMETERS CAN BE OVERWRITTEN/OVERRIDDEN IF YOU GIVE PARAMETERS IN EACH BLOCK 	*/
+/* THESE ARE THE GLOBAL SETTINGS    */
+*{margin: 0; padding: 0;}
+body
+{
+	margin: 0px;
+	font-family: Arial, "Arial Bold";
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+
+#styledHeaderA /* THIS HEADER CONTAINS EVERYTHING - INCLUDING THE FULL BACKGROUND IMAGE */
+{
+	background-color: white;
+	height: 1000px;
+/*	background-size: cover;*/
+/*	width: 2000px;*/
+/*	margin-right: 0px;*/
+/*	margin-left: 0px;*/
+	
+	display: flex;  /*THIS INSTRUCTS THE HTML TO ALIGN HORIZONTALLY*/
+	flex-direction: row;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+#styledHeaderAMobile /* THIS HEADER CONTAINS EVERYTHING - INCLUDING THE FULL BACKGROUND IMAGE */
+{
+
+	background-color: white;
+	height: 960px;
+	background-size: cover;
+	width: 360px;
+	max-width: 360px;
+	margin-right: 0px;
+	margin-left: 0px;
+	display: flex;  /*THIS INSTRUCTS THE HTML TO ALIGN HORIZONTALLY*/
+	flex-direction: row;
+}
+
+#styledHeaderMobileCentre
+{
+	display: block;
+	margin: 0 auto;
+	width: 360px;
+	
+}
+
+#trueNavWithinA /* MAGENTA IN TRAINING  --  HOLDS THE LINKS*/
+/* THIS NAV IS A CONTAINER FOR THE TOP BAR LINKS*/
+{
+	height: 50px;
+	width: 600px;
+	background-color: transparent;
+	margin-top: 0px;
+	margin-right: 100px;
+	margin-bottom: 10px;
+}
+
+#powerOfThirds /* BLACK - IS USED TO SPLIT THE LEFT HALF OF THE SCREEN IN TWO*/
+{	height: 50px;
+	width: 150px;
+	margin-top: 25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	background-color: transparent;
+}
+
+#inceptionNavA /* GREY - SEE THROUGH IN TRAINING -- HOLDS THE "HERO" BUTTONS*/
+/* THIS NAV IS A CONTAINER FOR THE ON-SCREEN GRAPHIC RELATED BUTTONS*/
+{
+	height: 50px;
+	width: 150px;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 50px;
+	background-color: rgba(1,1,1,1);
+	background-color: transparent;
+}
+
+#basicLink
+{
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 100px;
+	color: black;
+}
+
+#basicLinkBookend
+{
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	color: black;
+}
+
+#boxedTextSoundButton /* CONTAINS THE WORD "SOUND"*/
+{
+	justify-content: left;
+	width: 100px;
+	height: 70px;
+	padding: 5px;
+	font-size: 40px;
+	margin-top: 200px;
+	margin-left: 0px;
+	margin-right: 0px;
+/*	
+	border: dashed;
+	flex-direction: column;
+	border-radius: 3px;
+*/	
+}
+
+#boxedTextLightsButton
+{
+	justify-content: center;
+	width: 160px;
+	height: 100px;
+	padding: 5px;
+	font-size: 40px;
+	margin-top: 140px;
+	margin-left: 70px;
+/*	
+	border: dashed;
+	border-radius: 3px;
+*/	
+}
+
+#boxedTextDiscordButton
+{
+	justify-content: center;
+	width: 300px;
+	height: 50px;
+	padding: 1px;
+	font-size: 40px;
+	margin-top: 23px;
+	margin-left: 15px;
+/*	
+	border: dashed;
+	border-radius: 3px;
+*/	
+}
+
+#boxedTextContractButton
+{
+	justify-content: center;
+	width: 300px;
+	height: 50px;
+	padding: 1px;
+	font-size: 40px;
+	margin-top: 23px;
+	margin-left: 15px;
+/*	
+	border: dashed;
+	border-radius: 3px;
+*/	
+}
+
+#sideBySide
+{
+	background-image: none;
+	height: 960px;
+	width: 960px;
+	background-size: cover;
+	display: flex;  /*THIS INSTRUCTS THE HTML TO ALIGN HORIZONTALLY*/
+	flex-direction: column;
+}
+
+#styledHeaderB
+{
+	background-image: none;
+	height: 960px;
+	background-size: cover;
+	margin-right: 0px;
+	width: 55vw;
+	background-position: 1750px;
+	display: flex;  /*THIS INSTRUCTS THE HTML TO ALIGN HORIZONTALLY*/
+	flex-direction: row;
+}
+
+#trueNavAbove
+{
+	height: 7vh;
+	background-color: rgba(1,1,1,0.5);
+	padding-left: 10px;
+	margin-right: 0px;
+}
+
+#boxedTextSoundButtonB
+{
+	justify-content: center;
+	width: 160px;
+	height: 100px;
+	padding: 5px;
+	font-size: 40px;
+	margin-top: 0px;
+	margin-left: 1px;
+	margin-right: 0px;
+	border: dashed;
+	display: flex;
+	flex-direction: column;
+}
+
+#boxedTextA
+{
+	size: 100px;
+	width: 300px;
+	height: 300px;
+	border: dashed;
+	border-width: 5px;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+#boxedTextB
+{
+	size: 100px;
+	width: 300px;
+	max-height: 500px;
+	margin-left: 10px;
+	margin-right: 0px;
+	background-size: cover;
+	background-position: 1400px;
+	border: dashed;
+	border-width: 5px;
+	text-align: center;
+}
+
+#thirdRowDown
+{
+	margin-top: 150px;
+	display: flex;
+}
+
+#speakAndSpellButtonStyle
+{
+	background-color: transparent;
+	border-radius: 7px;
+	border-color: transparent;
+	width: 32px;
+	height: 28px;
+	margin-right: 2px;
+	margin-left: 0px;
+	color: transparent;
+	outline-color: transparent;
+}
+
+#pageLinksButtonStyle
+{
+	border:dashed;
+}
+
+
+

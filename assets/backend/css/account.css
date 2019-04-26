@@ -1,0 +1,590 @@
+
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+.googleAuthText
+{
+    font-size:17px;
+    font-weight:700;
+}
+.content {
+    display: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.exChange_name
+{
+    cursor: pointer;
+    border: 1px solid darkgrey;
+    padding: 5px 20px;
+    border-radius: 17px;
+    box-shadow: 3px 3px 10px darkgoldenrod;
+    color: black;
+}
+
+
+/* The container */
+.container1 {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 20px;
+}
+
+/* Hide the browser's default radio button */
+.container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+    background-color: #ffc327;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container1 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container1 .checkmark:after {
+  top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+  border-radius: 50%;
+  background: white;
+}
+
+.setQuantityDiv{
+    margin: 10px 0;
+}
+.setQuantityDiv span{
+    
+}
+.radioAutoRe .setQuantityDiv{
+    
+}
+.radioAutoRe .setQuantityDiv span{
+    
+}
+#myTab .nav-item{padding: 0;}
+#myTab .nav-item a{
+    font-weight: 700;
+    font-size: 18px;
+    color: #343a40;
+}
+#myTab .nav-item.show .nav-link,#myTab .nav-link.active {
+    color: #daa521;
+    background-color: #343a40;
+    /* border-color: #daa521 #D9A421; */
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+.tab-content>.active {
+    display: block;
+    background: #ddd;
+    border-radius: 0 10px 10px 10px;
+}
+.card{margin-bottom: 0px;border: none;}
+.content{display: block;margin-bottom: 0;padding: 20px;}
+.exChange_name{display: block;}
+#accordion .collapse{
+    /*border: 1px solid rgba(0,0,0,.125);*/
+    /*border-radius: .25rem;*/
+    /*margin-bottom: 30px;*/
+}
+
+.accfcs{
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+.accfcs > h5{
+    background: #343940;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0;
+}
+.accfcs_flex{
+    /*display:flex;*/
+    /*justify-content:space-between;*/
+    padding: 10px 15px;
+    background: #f3f3f3;
+    border-radius: 0 0 5px 5px;
+}
+.accfcs_flex a{color: inherit;}
+.accfcs_flex p{
+    font-weight: 700;    
+    color: #000;
+    font-size: 20px;
+    
+}
+
+
+.automBotPageSection{
+  margin: 30px 10px 10px 10px;
+  padding: 15px;
+  background: #fff;
+} 
+.automBotPageSection > h2{
+margin-bottom: 20px;
+}  
+.exchangesWrap{
+
+}
+.exchaneRow{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.exchaneRow > span{
+
+}
+.exchaneRow > span:last-of-type{
+  padding-top: 12px;
+  padding-right: 10px;
+}
+.exchaneRow > span > button ,
+.exchaneRow:nth-of-type(2n) > span > button:hover {
+    width: 230px;
+    background: #343a40;
+    border-color: #343a40;
+}
+.exchaneRow:nth-of-type(2n) > span > button,
+.exchaneRow > span > button:hover{
+    background: #daa521;
+    border-color: #daa521;
+    color: #fff;
+}
+
+.field_wrapper{
+  
+}
+.field_wrapper ul{
+  list-style-type: decimal-leading-zero;
+  padding: 0;
+}
+.field_wrapper ul li{
+  display: flex;
+  margin-bottom: 10px;
+}
+.field_wrapper li input,.field_wrapper li span{
+  width: 100%;
+  padding: 10px 25px;
+  border: none;
+  background: #cacaca;
+  color: #000;
+  font-weight: 700;
+  border: 1px solid #343A40;
+  border-radius: 10px;
+  outline: none;
+}
+.field_wrapper li span{margin-right: 10px;text-align: center;max-width:150px;border: 1px solid transparent;}
+/*.field_wrapper li input:first-of-type{*/
+  /*max-width: 60px;*/
+/*  max-width: 250px;*/
+  /*margin-right: auto;*/
+/*  margin-right: 10px;*/
+/*  text-align: center;*/
+/*}*/
+.field_wrapper li input[placeholder="Coin Tag"]{max-width: 250px;margin-right: 10px;text-align: center;}
+.field_wrapper li a.add_button{
+  color: #daa521;
+  padding: 10px;
+  background: #000;
+  width: 34px;
+  display: inline-block;
+  height: 44px;
+}
+.field_wrapper li a.remove_button {
+  color: #daa521;
+  padding: 10px;
+  background: #000;
+  width: 34px;
+  display: inline-block;
+  height: 44px;
+}
+.modal{
+  
+}
+.modal form{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.formInnerDiv{margin: 20px 0;}
+.formInnerDiv > input{
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    background: #00000036;
+    border: none;
+    outline: 0;
+    width: 100%;
+}
+.greentick{color: green;}
+p{
+    /*background: #ff000057;*/
+    /*color: #9a0505;*/
+    /*font-size: 18px;*/
+    /*padding: 10px 15px;*/
+}
+.addressTag{display: flex;margin-bottom: 10px; }
+.addressTag label{
+    margin-right: 20px;
+    font-weight: 700;
+    min-width: 100px;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.addressTag input{
+    padding: 10px 15px;
+}
+
+#pinSupportDiv
+{
+    display:none;
+}
+#pinSupportCheck
+{
+     display:none;
+}
+.showSupp
+{
+    background-color: #888b8e;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+
+
+
+
+/**/
+/* The container */
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.radioCheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input ~ .radioCheckmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .radioCheckmark {
+    /*background-color: #2196F3;*/
+    background-color: #daa521;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.radioCheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .radioCheckmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .radioCheckmark:after {
+    left: 9px;
+    top: 3px;
+    width: 8px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.exchangesSpreadWrap{
+    padding: 10px 15px;
+    background: #fff;
+}
+.exchangesContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkboxWrapper{width: 20%;}
+.votingSubscription
+{
+    text-align: center;
+}
+.votingSubscription h5
+{
+    text-align: left;
+}
+.votingSubscription button
+{
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.votingTab .col-md-8{border-right: 1px solid #e6e6e6;}
+.voting_left{}
+.voting_left h2{}
+.active_votesWrap{}
+.voteBox{
+    padding: 10px 15px;
+    /*background: #343a40d6;*/
+    /*color: #fff;*/
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+    background: #343a4008;
+    /*padding: 20px;*/
+    border: 1px solid #9a9da073;
+}
+.voteBox:last-of-type{margin-bottom: 0;}
+.voteBox h4{
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    color: #daa521;
+}
+.voteBox p{font-weight: 600;}
+
+.voteRadioboxWrapper{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+.radioGasWrap{
+    position: relative;
+    display: block;
+    background: #31373e57;
+    border-radius: 10px;
+    height: 22px;
+}
+.radioGasText{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    left: 50%;
+    transform: translate(-50%);
+    top:0 ;
+    color: #fff;
+    font-weight: 700;
+}
+.radioGas{
+    width: 100%;
+    height: 22px;
+    display: inline-block;
+    background: #dba61b;
+    border-radius: 10px;
+}
+.checkboxContainer{font-size: 15px;}
+.checkboxContainer p{padding-top: 5px; font-size: 14px;font-weight: 400;}
+/*.voteBox{}*/
+.voteBoxWrap{margin-bottom: 20px;}
+.voteBox h4 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    color: #171f27;
+    font-weight: 700;
+}
+
+.voting_right_bottom{
+    /*height: 500px;*/
+    overflow-y: scroll;
+    
+    max-height: 700px;
+}
+.old_voteBox .checkboxContainer{padding-left: 0;}
+/*.radioGas{}*/
+
+/* width */
+.voting_right_bottom::-webkit-scrollbar {
+    width: 4px;
+}
+/* Track */
+.voting_right_bottom::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+.voting_right_bottom::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+.voting_right_bottom::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.active_votesWrap {padding: 20px;}
+.active_votesWrap .card-header{
+    background-color: rgb(49, 55, 62);
+    color: #fff;
+}
+.old_voteings h2{font-size: 24px;}
+.active_votesWrap .card-header:first-child{border-radius: 10px 10px 0 0;}
+.active_votesWrap .card-body{padding: 0;}
+.voteBox .voteRadioboxWrapper{margin-bottom: 15px;}
+.voteBox .voteRadioboxWrapper:last-of-type{border-bottom: none;margin: 0;padding: 0;}
+.active_votesWrap.old_voteBox{padding: 20px 5px 10px 0px;}
+.allOldVotes .radioGasWrap{display: flex;height: 15px;}
+.allOldVotes .radioGasText{font-size: 12px;top: -2px;}
+.allOldVotes .radioGas{height: 15px;}
+
+.allOldVotes .checkboxContainer p{padding: 0;margin-bottom: 5px;}
+.old_vote_box{margin-bottom: 10px;}
+.old_vote_box h5{font-size: 20px;}
+.old_voteBox .card-header{background-color: rgba(49, 55, 62, 0.37);}
+.expireDate{font-size: 12px;text-align: right;}
+
+
+@media screen and (max-width: 767px){
+    
+    .votingTab .col-md-8{border: none;}
+    .checkboxWrapper {width: 33%;}
+    .field_wrapper ul li{display: block;}
+    .field_wrapper li span{display: block;margin-bottom: 10px;}
+    .field_wrapper li input[placeholder="Coin Tag"] {
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .field_wrapper ul li {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #cacaca;
+        padding-bottom: 20px;
+    }
+    .field_wrapper li input{
+        text-align: center;
+    }
+    #profile .card{margin-bottom: 20px;}
+    #profile .card-body{padding: 0;}
+    #profile .content{padding: 10px 10;}
+    .formInnerDiv{margin: 0;}
+}
+
+@media screen and (max-width: 600px){
+    .checkboxWrapper {width: 50%;}
+}
+
+@media screen and (max-width: 480px){
+    .checkboxWrapper {width: 100%;}
+}

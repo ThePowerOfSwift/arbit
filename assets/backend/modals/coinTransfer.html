@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <div class="col-md-12 text-center">
+        <h3>Transfer Coin</h3>
+    </div>    
+</div> 
+<div class="modal-body">
+    <div class="form-group">
+        <label>From Exchange:</label>
+        <select class="form-control" ng-model="ct.selectedFromExchange" data-ng-options="e for e in ct.exchangesNames"></select>
+    </div>
+    <div class="form-group">
+        <label>To Exchange:</label>
+        <select class="form-control" ng-model="ct.selectedToExchange" data-ng-options="e for e in ct.exchangesNames"></select>
+    </div>
+    <div class="form-group">
+        <label>Currency:</label>
+        <select class="form-control" ng-model="ct.selectedCurrTrans" data-ng-options="e for e in ct.currNamesTrans"></select>
+    </div>
+</div> 
+<div class="modal-footer">
+    <div class="col-md-12 textAlignCenter">
+        <button class="btn btn-success" ng-click="ct.confirmTransfer(ct.selectedFromExchange, ct.selectedToExchange, ct.selectedCurrTrans)">Confirm</button>
+        <button class="btn btn-danger" ng-click="ct.cancel()">Cancel</button>
+    </div>
+</div>

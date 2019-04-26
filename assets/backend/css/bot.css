@@ -1,0 +1,576 @@
+/*aBOT1*/
+.rowNote{
+    margin-top: 30px !important;
+    background-color: grey !important;
+    border-radius: 20px !important;
+    padding-top:3px;
+}
+.smFont{font-size:15px;}
+.smmFont{font-size:12px;}
+.lgFont{font-size:35px;}
+.activeClass{color : deepskyblue;}
+.TableBot1 > tbody > tr > td{
+    border-top: none !important;
+    text-align: center;
+}
+.fontWhite{color:white;}
+.functionBtn{
+    background-color: gray;
+    border: none;
+    color: lightgrey;
+    padding: 5px 15px;
+}
+.functionBtn:hover{
+    background-color:lightgrey;
+    color:white;
+    border-radius: 17px;
+}
+.functionBtnactive{
+    background-color:lightgrey;
+    color:white;
+    border-radius: 17px;
+}
+.chartArea{background-color: lightgrey;}
+/*aBOT2*/
+.rowOneBot2{
+    margin-top: 50px;
+    font-weight: 600;
+    text-align:center;
+    margin-bottom: 40px;
+}
+.addressSpan{
+    background-color: aliceblue;
+    padding: 18px;
+    border-radius: 7px;
+}
+.textAlignCenter{text-align:center;}
+.textAlignRight{text-align: right;}
+.textAlignLeft{text-align: left;}
+.descpBOT2{margin-top: 20px;}
+
+.lgFontWeightBOT2{
+    font-size:35px;
+    font-weight:600;
+}
+.rowDataBot2{margin: 20px 0px;}
+.margin_Top_50{margin-top: 50px;}
+.bot2Graph{background-color: #343a40;}
+.rowmarginTop_100px{margin-top: 100px;}
+#shade {
+    border: 2px solid;
+    padding: 10px;
+    box-shadow: 0px 0px #888888;
+}
+.radioAutoRe{
+    font-size:15px;
+    font-weight: 600;
+}
+.radioAutoRe input{margin:10px;}
+                                /*aBOT3*/
+.rowOneBot3{
+    margin-top: 45px;
+    text-align: center;
+}                    
+.backgroundWhite{background-color: white;}
+.rowMarginBot3{
+    margin-top: 20px;
+    text-align: center;
+}
+.dashboardHeadingSpan{
+    padding: 0px 50px;
+    color: goldenrod;
+    font-size: 40px;
+    font-weight: 600;
+}
+.fontWeight{font-weight:600;}
+.colBorder{box-shadow: 2px 3px 2px grey;}
+.imgLogoMarg{margin-top: 15px;}
+.col4Heading{font-size:17;    }
+.col4Digit{font-size:30px;    }
+.borderBottomBot3{border-bottom: 1px solid;}
+.borderRightBot3{border-right: 1px solid;}
+.btnWarningMarg{margin: 5px 20px;}
+.btnSuccessMarg3{
+    margin: 5px 0px;
+    padding: 7px 45px;
+}
+.col4MargBottom{margin-bottom: 15px;}
+.col4PaddingBottom{padding-bottom: 10px;}
+.heightBot3{min-height: 210px}
+.col4MargTop{margin-top: 27px;}
+#chartdiv{height: 210px !important;}
+.amcharts-chart-div > a {
+    color: transparent !important;
+    pointer-events: none !important;
+}
+                                /*EXCHANGE*/
+.chartExchnage{
+    margin-top:30px;
+    height:300px !important;
+}
+.backgroundColorGrey{
+    background-color: lightgrey;
+    border: 1px solid #868e96;
+}
+.backgroundColorAB{
+    background-color: #343a40!important;
+    color: white;
+    border: 1px solid darkgrey;
+}
+.emptyRow{margin: 10px 0px;}
+.tableDivExchange{
+    height: 180px;
+    overflow-x: auto;
+}
+.depositBtnExch{margin-top:40px;}
+.addressDiv{margin-bottom: 25px;}
+#sellTable > tr > td{padding:0px !important;}
+#buyTable > tr > td{padding:0px !important;}
+#marketHistory > tr > td{padding:0px !important;}
+#closeTable > tr > td{padding:0px !important;}
+#openTable > tr > td{padding:0px !important;}
+.snackbar {
+     visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: orange;
+    color: #333;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+.snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: aliceblue;
+    color: #333;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbarOrder {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: orange;
+    color: #333;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbarOrder.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbarOrderCancel {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: orange;
+    color: #333;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbarOrdersnackbarOrderCancel.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbarFalseSell {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: orange;
+    color: Black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbarFalseSell.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbarSell {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: orange;
+    color: Black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbarSell.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbarBuy {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: orange;
+    color: Black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbarBuy.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.radioStopaBot
+{
+    padding: 15px 4px 0px 40px;
+    font-size: 20px;
+}
+.radioStopaBot form div label
+{
+    padding-right: 20px;
+}
+.radioAutoRe
+{
+    font-size:15px;
+    font-weight: 600;
+}
+.displayNone{
+    display:none;
+}
+.modalHeaderExchange{
+    color: #daa521;
+    background: #161e2d;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.modalHeaderExchange button{
+    color: #daa521;
+}
+.modalHeaderExchange button:hover{
+    color: #fff;
+}
+#autoReCheck label {
+    margin: 8px 20px;
+}
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.excBuySellBtn{width:75px;}
+.excBuySellBtnDis{}
+.innerHideDiv{border:1px solid grey;}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none !important; 
+}
+#sellTable{transition-duration: 0.2s}
+#openTable{transition-duration: 0.2s}
+#closeTable{transition-duration: 0.2s}
+.inputDescExc{font-size:12px;}
+.iconsFA{margin: 10px 0px;}
+.sellBuyOrderInp{    
+    width:90%;
+    float:right;   
+}
+.inputOrdExc{font-size: 11px;}
+.font18{    
+    font-size:16px;
+    text-align:center;
+}
+.showAllRecord{    
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    color: #daa522;
+    font-weight: 700;
+}
+#openTableModal tr td{padding:2px !important;}
+                                /*Dashboard*/
+.transferDiv{    
+    border: 1px solid #343a40!important;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    text-align:center;
+}
+.sendTokenBtn{    
+    border: 1px solid #343a40!important;
+    background-color: goldenrod;
+    width: 100px;
+    box-shadow: 2px 2px
+}
+.col-form-labelDash{    padding-top: calc(0.250rem + 1px);
+    padding-bottom: calc(.100rem + 1px);
+    margin-bottom: 1px;
+    line-height: 1;
+    border:1px solid;
+    box-shadow: 2px 2px;
+}
+.btn-blockDash{    display: block;
+    width: 78%;
+    margin: 50px 50px;
+    font-size: 22px;
+    box-shadow: 3px 3px  #888888 !important;
+}
+.set_max_width_300px{
+    max-width:300px !important;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.custom_icon {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.lggFontDash{    
+    font-size:30px;
+    font-weight:700;
+}
+.lgFontDash{font-size:18px;}
+
+.modalHeaderExchange{
+    color: #daa521;
+    background: #161e2d;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.modalHeaderExchange button{
+    color: #daa521;
+}
+.modalHeaderExchange button:hover{
+    color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+    .width_100 {width:100% !important;}
+    .hiddden_insmall{display:none !important;}
+    .margin_3px{margin-top:3px;}
+}
+
+@media only screen and (max-width: 579px) {
+    .fullwidth_579{width:100% !important;}
+    .hidden_579{display:none !important;}
+    .col-sm-6.fullwidth_579{margin-top:3px;}
+    .btnMarginLeftExc{margin-top:15px;}
+    .exchangeSelectWall{width:75% !important;}
+    .textAlignC{text-align:center;}
+}
+
+.amExportButton{display: none !important;}
+.width_100_deposit {width:100% !important;}
+.rowAddressDeposit{
+    background-color: darkgray !important;
+    border-radius: 10px !important;
+    padding: 10px;
+}
+.btnMarginLeftExc{
+    margin-left: 20px;
+}
+.totalEth_Exchange{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.marketValue_btn{
+    /*border-radius: 6px;*/
+    margin: 2px;
+    margin-top: 9px;
+}
+#myChartDash{height:470px !important;}
+.dashboardAnnonc{
+    background: #daa521;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    border-radius:8px;
+}
+.dashboardAnnoncDiv{
+    padding: 0px 0px;
+    color: white;
+}
+.valuesDashDiv{
+    border: 8px solid #c1c1c1;
+    padding: 20px 20px;
+    margin: 30px 0;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px #6f6753;
+    background: #343a40;
+    color: #c1c1c1;
+}
+.marGinTop_Bottom{margin: 10px 0px -20px 0px;}
+text.highcharts-credits{display:none !important;}
+.highcharts-button{ display:none !important;}
+.margin_top60{ margin-top:60px;}
+.DmRight{
+    right:0;
+    left:auto;
+    padding: 8px 20px;
+    color: white;
+    background-color: #343a40;
+    min-width: 15rem;
+}
+.DmRight li:hover{color:goldenrod;}
+.userDetailIcon{font-size:40px;}
+.exchangeSelectWall{
+    width:45%;
+    margin-left: 17px;
+    box-shadow: 3px 3px 2px 1px #daa522;
+}
+.exchangeSelectWall:focus{
+    outline:none;
+    box-shadow: 3px 3px 2px 1px #daa522;
+}
+.exchangeLabelWall{
+    margin-left: 17px;
+    color: #999c9f;
+    font-weight: 700;
+}
+.paddingExTop{padding-top: 30px;}
+
+
+
+/*/////////////////////////////////////// New aBOT */
+
+.margin_Top_30{margin-top: 30px;}
+.col-lg-abot {
+    flex: 0 0 19%;
+    max-width: 19%;
+}
+.boxDivaBot3
+{
+    min-height: 135px;
+    border: 2px solid #daaf2a;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 5px;
+    word-break: break-word;
+    text-align: center;
+    box-shadow: 2px 2px 10px #daaf2a;
+}
+.lgFontBOT2{font-size:12px;}
+.lggFontBOT2{
+    font-size:22px;
+    font-weight:600;
+}
+#amountBonusDiv {
+    text-align: center;
+    color: #29a745;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1280px){
+    .boxDivaBot3 {
+        padding: 20px 5px;
+        margin: 2px;
+    }
+    .lggFontBOT2{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 1199px){}
+@media screen and (max-width: 1024px){
+    .col-lg-abot {
+        flex: 0 0 26%;
+        max-width: 26%;
+    }
+    .boxDivaBot3 {
+        padding: 20px 5px;
+        margin: 5px 16px;
+    }   
+}
+@media screen and (max-width: 992px){}
+@media screen and (max-width: 767px){
+    .col-lg-abot {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    .boxDivaBot3 {
+        margin: 5px 25px;
+    }   
+}
+@media screen and (max-width: 680px){}
+@media screen and (max-width: 560px){
+    .col-lg-abot {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    .boxDivaBot3 {
+        margin: 5px 15px;
+    }  
+    .btnFont{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 380px){
+    .btnFont{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 320px){}

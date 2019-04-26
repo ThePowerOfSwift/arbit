@@ -1,0 +1,36 @@
+<div class="modal-header">
+    <div class="col-md-12">
+        <h1>Your Arbitraging Trade For <span class="text-danger">{{pc.data.curr}}</span></h1>
+    </div>    
+</div> 
+<div class="modal-body">
+    <h3 class="text-center">Buy From : <span class="text-danger">{{pc.data.buyExchange}}</span> </h3>
+    <h5 class="text-center">Buying Value : <span class="text-danger">{{pc.data.buyFrom}}</span> </h5>
+    
+    <div class="form-group">
+        <label for="inputAddress">Api Key :</label>
+        <input type="text" ng-model="apiKeyBuyingAdd" class="form-control" placeholder="API Key" required>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Secret Key :</label>
+        <input type="text" ng-model="secretKeyBuyingAdd" class="form-control" placeholder="Secret Key" required>
+    </div>
+
+    <h3 class="text-center">Sell To : <span class="text-danger">{{pc.data.sellExchange}}</span> </h3>
+    <h5 class="text-center">Selling Value : <span class="text-danger">{{pc.data.sellTo}}</span> </h5>
+    
+    <div class="form-group">
+        <label for="inputAddress">Api Key :</label>
+        <input type="text" ng-model="apiKeySellingAdd" class="form-control" placeholder="API Key" required>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Secret Key :</label>
+        <input type="text" ng-model="secretKeySellingAdd" class="form-control" placeholder="Secret Key" required>
+    </div>
+</div>  
+<div class="modal-footer">
+    <div class="col-md-12 textAlignCenter">
+        <button class="btn btn-success" ng-click="pc.confirmTrade(apiKeyBuyingAdd, secretKeyBuyingAdd, apiKeySellingAdd, secretKeySellingAdd)">Confirm</button>
+        <button class="btn btn-danger" ng-click="pc.cancel()">Cancel</button>
+    </div>
+</div>

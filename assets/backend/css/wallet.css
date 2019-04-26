@@ -1,0 +1,177 @@
+/*wallet css file*/
+button{transition: 0.3s ease all;cursor: pointer;}
+.modalHeaderExchange{
+    color: #daa521;
+    background: #161e2d;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.modalHeaderExchange button{
+    color: #daa521;
+}
+.modalHeaderExchange button:hover{
+    color: #fff;
+}
+/**/
+
+.btn-blockDash {
+    font-size: 15px;
+    margin: 0px auto;
+}
+.height220{
+    /*min-height: 220px;*/
+    margin-bottom: 30px;
+    /*border: 1px solid #888;*/
+    /*padding: 10px 20px 20px;*/
+    /*border-radius: 20px;*/
+    /*box-shadow: 0 0 10px #888;*/
+    /*background: #fefefe;*/
+}
+/**/
+.paddingRelative{
+    padding: 40px;
+    position: relative;
+}
+.paddingRelative span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.first_wDiv{
+    
+}
+.second_wDiv{
+    
+}
+.secondNull_wDiv{
+    padding: 15px;
+    position: relative;
+}
+
+.secondNull_wDiv span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.third_wDiv{
+    
+}
+.third_wDiv .col-lg-6.col-md-12{
+    
+}
+.third_wDiv button{
+    
+}
+.fourth_wDiv{
+    
+}
+/**/
+.transferDiv {margin-bottom: 15px;min-height: 280px;}
+.transferDiv > h3{text-align: center;}
+.lggFontBOT2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.tn-blockDash{
+    width: 80%;
+    margin: 30px auto;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px #888888 !important;
+}
+.btn-blockDash{ 
+    font-size: 15px; 
+    border: 2px solid;
+    padding: 10px;
+    box-shadow: 0px 0px #888888;
+}
+
+/**/
+.poolTableDiv {
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 15px;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+}
+.marg35{margin: 10px 0px 35px 0px;}
+
+
+@media screen and (max-width: 1199px){
+    .btn-blockDash{ width: 100%; }
+}
+@media screen and (max-width: 992px){
+    .secondNull_wDiv{padding: 10px;}
+    .paddingRelative{padding: 25px;}
+    .third_wDiv .col-lg-6.col-md-12:last-of-type{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    .height220{
+        margin-bottom: 20px;
+        border: 1px solid #888;
+        padding: 10px 20px 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #888;
+        background: #f9f9f9;
+    }
+    .lggFontBOT2{font-size: 24px;}
+    .paddingRelative{padding: 20px;margin-bottom: 10px;}
+    
+    .third_wDiv .col-lg-6.col-md-12{
+        width: 45%;
+        margin: 0 auto;
+    }
+    .third_wDiv .col-lg-6.col-md-12:last-of-type{
+        margin-top: 0px;
+    }
+    .paddingRelative span {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+    }
+    
+    .textAlignCenter.col-lg-3.col-md-6{
+        padding: 0;
+    }
+    .transferDiv{
+        
+    }
+    .transferDiv .form-group.row{
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 0px -10px 10px;
+    }
+    
+    .transferDiv .form-group.row label{
+        flex: 0 0 25%;
+        max-width: 25%;
+        border: none;
+        box-shadow: none;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .transferDiv .form-group.row .col-8{
+        padding: 0;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .transferDiv button{width: 100%;}
+    .marg35 h3{font-size: 20px;}
+}
+
+
+@media screen and (max-width: 680px){
+    
+    .third_wDiv .col-lg-6.col-md-12{
+        width: 100%;
+        margin: 0 auto;
+    }           
+    
+    .third_wDiv .col-lg-6.col-md-12:last-of-type{ margin-top: 10px;  }
+}
